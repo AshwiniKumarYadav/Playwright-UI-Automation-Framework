@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+# Build output
+dist/
+# Environment files with real secrets
+config/.env.prod
+.env.local
+.env
+# Generated reports and artifacts
+reports/html-report/
+reports/json-report/
+reports/junit/
+reports/test-artifacts/
+reports/logs/
+# Playwright cache
+.playwright/
+# Auth storage state (contains session tokens)
+fixtures/auth/user-storage-state.json
+# OS
+.DS_Store
+Thumbs.db
+# IDE
+.vscode/
+.idea/
+*.iml

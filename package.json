@@ -1,0 +1,27 @@
+{
+  "name": "kapruka-playwright-framwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e",
+    "test:product": "playwright test tests/e2e/productPurchase.spec.ts --project=chromium",
+    "test:login": "playwright test tests/e2e/login.spec.ts --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1",
+    "allure-playwright": "^3.10.2",
+    "dotenv": "^17.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
