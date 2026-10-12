@@ -46,7 +46,7 @@ export class ComboGiftsPage extends BasePage
     const priceLocator = card.locator('.lTitlePrice').first();
     await priceLocator.waitFor({state: 'visible', timeout: 20000});
     const price = await priceLocator.textContent();
-    return price?.trim() || '';
+    return price?.trim() || ''; // return the trimmed price or an empty string if null
   }
 
   //listAllProducts
